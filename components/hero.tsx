@@ -51,9 +51,9 @@ const Hero = () => {
 						transition={{ delay: 0.2, duration: 0.8 }}
 						className="mb-6 inline-block"
 					>
-						<span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
+						{/* <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
 							Big Data Engineer
-						</span>
+						</span> */}
 					</motion.div>
 
 					<motion.h1
