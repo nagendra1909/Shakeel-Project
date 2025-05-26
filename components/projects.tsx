@@ -30,7 +30,6 @@ const projects = [
 ]
 
 const technologies = [
-	{ id: "all", label: "ALL" },
 	{ id: "bi", label: "BI" },
 	{ id: "sql", label: "SQL" },
 	{ id: "python", label: "Python" },
@@ -39,6 +38,7 @@ const technologies = [
 	{ id: "pipeline", label: "Data Pipeline" },
 	{ id: "cloud", label: "Cloud" },
 	{ id: "e2e", label: "E2E" },
+	{ id: "al", label: "ALL" },
 ]
 
 interface TechProject {
@@ -106,6 +106,49 @@ const techProjects: TechProjectsMap = {
 		},
 		
 	],
+	al: [
+		{
+			title: "GD Foods Sales Insights",
+			description: "Unlock sales performance like never before.This Power BI dashboard offers a deep dive into GD Foods' sales trends, product performance, and regional growth. With intuitive visuals and real-time data insights, it empowers strategic decisions and fuels business expansion.",
+			image: "/bi1.jpg",
+			tags: ["Power BI", "DAX", "Power Query", "Data Modeling", "Sales Analytics", "Data Visualization"],
+			github: "https://github.com/youruser/bi-project",
+			demo: "https://demo-url.com"
+		},
+		{
+			title: "Winfix HR Dashboard",
+			description: "Revolutionizing HR analytics with clarity.The Winfix HR Dashboard simplifies workforce data, helping HR teams track employee metrics, hiring patterns, and retention rates. Built in Power BI, it brings actionable insights that enhance organizational efficiency and team satisfaction.",
+			image: "/bi2.jpg",
+			tags: ["Power BI", "DAX", "Power Query", "HR Analytics", "KPI Tracking", "Interactive Dashboard Design"],
+			github: "https://github.com/youruser/sales-analytics",
+			demo: "https://demo-url.com"
+		},
+		{
+			title: "Instagram Post Analytics",
+			description: "This project is an analysis of three months of Instagram data compiled between June 1, 2022 and August 31, 2022 studying the effects of a variety of variables, time of day, part of the week, post type, and content type, and the result of these on two key social media metrics, accounts reached and post engagements. This analysis was featured in an article written by my colleague naveen.",
+			image: "/sql.jpg",
+			tags: ["MySQL", "PowerBI",  "Speadsheets"],
+			github: "https://github.com/youruser/ml-pipeline",
+			demo: "https://demo-url.com"
+		},
+		{
+			title: "Salary Prediction in Tech Jobs",
+			description: "How much should someone earn based on level education and experience? Despite the fact that salary may not always be the primary motivation for accepting a job offer or staying in a role. The objective is to make accurate salary predictions based on existing known salaries by job and location. As a result, the model could help companies and existing/future employees to negotiate more competitive payments. For leaders and recruiters, salary is a matter from company success (and budget) perspective. For employees and job seekers, it is important for reasons that go beyond employment.",
+			image: "/python.jpg",
+			tags: ["Python, Data Wrangling", "Data Analysis","Data Visualization", "Matplotlib" ,"Seaborn", "Machine Learning"],
+			github: "https://github.com/youruser/ml-pipeline",
+			demo: "https://demo-url.com"
+		},
+		{
+			title: "An Integrated Development Of IoT Based Machine Learning For Data-Driven Travel Recommendations",
+			description: "It is a predictive modelling and recommendation system that continuously monitors environmental conditions, including air quality, noise pollution, and indoor pollutants. It uses real-time data from a network of sensors and integrates this with patient health records to provide personalized alerts and recommendations. These alerts help patients avoid potential health risks by making informed choices about their travel plans and daily activities.",
+			image: "/ml.jpg",
+			tags: ["Python", "Data Wrangling", "EDA", "Data Visualization", "Matplotlib", "Pandas", "Numpy", "Logistic Regression", "Decision Tree"],
+			github: "https://github.com/youruser/ml-pipeline",
+			demo: "https://demo-url.com"
+		},
+
+	],
 	// Add more technology sections as needed...
 }
 
@@ -137,10 +180,10 @@ const Projects = () => {
 		<section className="section bg-gray-900/30 relative">
 			<div className="container">
 				<div className="text-center mb-16">
-					<h2 className="section-title gradient-text">Other Projects</h2>
+					<h2 className="section-title gradient-text">OTHER - PROJECTS</h2>
 				</div>
 
-				<motion.div
+				{/* <motion.div
 					ref={ref}
 					variants={containerVariants}
 					initial="hidden"
@@ -183,7 +226,7 @@ const Projects = () => {
 							</Card>
 						</motion.div>
 					))}
-				</motion.div>
+				</motion.div> */}
 
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}

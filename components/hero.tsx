@@ -7,6 +7,13 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Download, ArrowDown } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
+const stats = [
+  { value: "7+", label: "Self-Made Data Projects" },
+  { value: "20+", label: "International Presentations and Conferences Delivered" },
+  { value: "2", label: "Hackathons / Awards Won" },
+  { value: "3+", label: "Industries Explored (AgriTech, FMCG, Healthcare)" },
+]
+
 const Hero = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -22,7 +29,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center">
+    <section className="relative min-h-screen flex items-center justify-center pb-20">
       <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 z-0" />
 
       <div className="container relative z-10">
@@ -74,67 +81,37 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="mb-10 text-lg text-gray-400 max-w-2xl mx-auto"
-          > I explore data to solve real-world problems.<br></br>
-            Turning raw data into smart decisions — from pipelines to predictions.
+            className="mb-10 text-lg text-gray-400 max-w-2xl mx-auto space-y-4"
+          >
+            <span className="block">Every dataset has a hidden story and I love uncovering it.</span>
+            <span className="block">I don't chase data for money, I do it for meaning.</span>
+            <span className="block">From patient care to public safety, I turn insights into business impact.</span>
           </motion.p>
 
+          {/* Stats Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="flex flex-wrap justify-center gap-4"
+            className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
           >
-            <Button
-              size="lg"
-              className="rounded-full bg-primary hover:bg-primary/90"
-              asChild
-            >
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                download
+            {stats.map((stat, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8 + index * 0.1, duration: 0.8 }}
+                className="flex flex-col items-center p-6 rounded-2xl bg-gray-900/50 backdrop-blur-sm border border-gray-800/50"
               >
-                <Download size={18} className="mr-2" />
-                Download Resume
-              </a>
-            </Button>
-
-            <Button
-              variant="outline"
-              size="lg"
-              className="rounded-full"
-              asChild
-            >
-              <Link
-                href="https://github.com/shakeelrifathcse"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github size={18} className="mr-2" />
-                GitHub
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="rounded-full"
-              asChild
-            >
-              <Link
-                href="https://www.linkedin.com/in/shakeelrifath/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin size={18} className="mr-2" />
-                LinkedIn
-              </Link>
-            </Button>
+                <span className="text-3xl font-bold text-primary mb-2">{stat.value}</span>
+                <span className="text-sm text-gray-400 text-center">{stat.label}</span>
+              </motion.div>
+            ))}
           </motion.div>
         </motion.div>
       </div>
 
+      {/* Scroll Button */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
