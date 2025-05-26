@@ -72,6 +72,11 @@
   .code-font {
     @apply font-mono;
   }
+
+  /* Adjust section spacing */
+  section {
+    scroll-margin-top: 5rem; /* Adds margin for fixed navigation */
+  }
 }
 
 .animate-in {
