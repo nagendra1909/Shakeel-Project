@@ -5,7 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin, Download, Phone } from "lucide-react";
+import { Mail, Github, Linkedin, Download, Phone, MessageCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Contact = () => {
@@ -31,7 +31,7 @@ const Contact = () => {
 
           <Card className="bg-gray-900/50 border-gray-800 mb-10 hover:border-primary/50 transition-all duration-300">
             <CardContent className="p-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={
@@ -72,6 +72,30 @@ const Contact = () => {
                       className="text-white hover:text-primary transition-colors"
                     >
                       +91 8608046140 
+                    </Link>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                  }
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  className="flex items-center justify-center md:justify-start gap-4"
+                >
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <MessageCircle size={20} className="text-primary" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="text-sm font-medium text-gray-400">WhatsApp</h3>
+                    <Link
+                      href="https://wa.me/918608046140"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-primary transition-colors"
+                    >
+                      Chat on WhatsApp
                     </Link>
                   </div>
                 </motion.div>
