@@ -68,10 +68,10 @@ const Contact = () => {
                   <div className="text-left">
                     <h3 className="text-sm font-medium text-gray-400">Phone</h3>
                     <Link
-                      href="tel:+919014486017"
+                      href="tel:+918608046140 "
                       className="text-white hover:text-primary transition-colors"
                     >
-                      +91 9014486017
+                      +91 8608046140 
                     </Link>
                   </div>
                 </motion.div>
