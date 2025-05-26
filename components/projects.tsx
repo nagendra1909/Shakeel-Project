@@ -13,17 +13,17 @@ import Image from "next/image"
 const projects = [
 	{
 		id: 1,
-		title: "GetIT-NOW - AI Career Assistant",
-		description: "A full-stack web application designed to connect students with freelance opportunities, helping them build portfolios and gain real-world experience. The platform fosters a community where students can showcase their skills and get paid for meaningful work.",
-		tags: ["React.js", "Next.js", "OpenAI", "Tailwind CSS", "Firebase", "PostgreSQL"],
+		title: "Sales Performance Dashboard for GD Foods  ->  Jun 2023 – Dec 2023",
+		description: "A data analytics project where I built a custom Power BI dashboard from scratch for GD Foods, a leading food production company. The dashboard integrated data from MySQL and Excel, providing sales performance insights across departments. This helped GD Foods enhance data transparency, predict market trends, set realistic sales goals, and drive strategic growth.",
+		tags: ["Power BI", "MySQL", "Excel",],
 		github: "hhttps://github.com/shakeelrifathcse/GetIt-main",
 		demo: "https://get-it-now.vercel.app/",
 	},
 	{
 		id: 2,
-		title: "Enhanced Virtual Shopping Experience",
-		description: "An AI-powered shopping platform offering a next-gen retail experience. Users can enjoy Virtual Try-On, Smart Sizing for perfect fits, Store Locator services, real-time Price Analytics, and even create personalized products through Custom Design — all supported by a fast, smart search feature for seamless browsing.",
-		tags: ["React + Vite", "PostgreSQL", "Firebase", "TypeScript"],
+		title: " Enviro - Predict  Health Guard+  -> Oct 2023 – Nov 2023",
+		description: "Developed an AI-driven system using IoT and data science to support travel decisions for patients with asthma and heart conditions. The system used real-time air and sound pollution data to predict future pollution levels using logistic regression and decision tree models. The research was published in an IEEE conference in 2024. ",
+		tags: ["Python", "Logistic Regression", "Decision Trees", "IoT", "Open-Source Tool "],
 		github: "https://github.com/shakeelrifathcse/Proto",
 		demo: "https://proto-self.vercel.app/",
 	},
@@ -57,39 +57,54 @@ type TechProjectsMap = {
 const techProjects: TechProjectsMap = {
 	bi: [
 		{
-			title: "Business Intelligence Dashboard",
-			description: "Interactive BI dashboard with real-time data visualization and analytics capabilities.",
-			image: "/wire.png",
-			tags: ["Power BI", "Tableau", "SQL", "Data Analysis"],
+			title: "GD Foods Sales Insights",
+			description: "Unlock sales performance like never before.This Power BI dashboard offers a deep dive into GD Foods' sales trends, product performance, and regional growth. With intuitive visuals and real-time data insights, it empowers strategic decisions and fuels business expansion.",
+			image: "/bi1.jpg",
+			tags: ["Power BI", "DAX", "Power Query", "Data Modeling", "Sales Analytics", "Data Visualization"],
 			github: "https://github.com/youruser/bi-project",
 			demo: "https://demo-url.com"
 		},
 		{
-			title: "Sales Analytics Platform",
-			description: "Comprehensive sales analytics platform with predictive modeling and reporting.",
-			image: "/sales-analytics.png",
-			tags: ["Power BI", "Python", "ML", "Data Analysis"],
+			title: "Winfix HR Dashboard",
+			description: "Revolutionizing HR analytics with clarity.The Winfix HR Dashboard simplifies workforce data, helping HR teams track employee metrics, hiring patterns, and retention rates. Built in Power BI, it brings actionable insights that enhance organizational efficiency and team satisfaction.",
+			image: "/bi2.jpg",
+			tags: ["Power BI", "DAX", "Power Query", "HR Analytics", "KPI Tracking", "Interactive Dashboard Design"],
 			github: "https://github.com/youruser/sales-analytics",
 			demo: "https://demo-url.com"
 		}
 	],
-	ml: [
+	sql: [
 		{
-			title: "Machine Learning Pipeline",
-			description: "End-to-end ML pipeline for data processing and model deployment.",
-			image: "/ml-pipeline.png",
-			tags: ["Python", "TensorFlow", "scikit-learn", "MLOps"],
+			title: "Instagram Post Analytics",
+			description: "This project is an analysis of three months of Instagram data compiled between June 1, 2022 and August 31, 2022 studying the effects of a variety of variables, time of day, part of the week, post type, and content type, and the result of these on two key social media metrics, accounts reached and post engagements. This analysis was featured in an article written by my colleague naveen.",
+			image: "/sql.jpg",
+			tags: ["MySQL", "PowerBI",  "Speadsheets"],
 			github: "https://github.com/youruser/ml-pipeline",
 			demo: "https://demo-url.com"
 		},
+		
+	],
+	python: [
 		{
-			title: "AI Image Recognition",
-			description: "Real-time image recognition system using deep learning.",
-			image: "/ai-image.png",
-			tags: ["Python", "PyTorch", "OpenCV", "Deep Learning"],
-			github: "https://github.com/youruser/ai-image",
+			title: "Salary Prediction in Tech Jobs",
+			description: "How much should someone earn based on level education and experience? Despite the fact that salary may not always be the primary motivation for accepting a job offer or staying in a role. The objective is to make accurate salary predictions based on existing known salaries by job and location. As a result, the model could help companies and existing/future employees to negotiate more competitive payments. For leaders and recruiters, salary is a matter from company success (and budget) perspective. For employees and job seekers, it is important for reasons that go beyond employment.",
+			image: "/python.jpg",
+			tags: ["Python, Data Wrangling", "Data Analysis","Data Visualization", "Matplotlib" ,"Seaborn", "Machine Learning"],
+			github: "https://github.com/youruser/ml-pipeline",
 			demo: "https://demo-url.com"
-		}
+		},
+		
+	],
+	ml: [
+		{
+			title: "An Integrated Development Of IoT Based Machine Learning For Data-Driven Travel Recommendations",
+			description: "It is a predictive modelling and recommendation system that continuously monitors environmental conditions, including air quality, noise pollution, and indoor pollutants. It uses real-time data from a network of sensors and integrates this with patient health records to provide personalized alerts and recommendations. These alerts help patients avoid potential health risks by making informed choices about their travel plans and daily activities.",
+			image: "/ml.jpg",
+			tags: ["Python", "Data Wrangling", "EDA", "Data Visualization", "Matplotlib", "Pandas", "Numpy", "Logistic Regression", "Decision Tree"],
+			github: "https://github.com/youruser/ml-pipeline",
+			demo: "https://demo-url.com"
+		},
+		
 	],
 	// Add more technology sections as needed...
 }
