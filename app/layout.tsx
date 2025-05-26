@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Portfolio of Shakeel Rifath",
   keywords: ["Shakeel Rifath"],
   icons: {
-    icon: "/image.png",
+    icon: "/shakeel_fevicon.png",
   },
   authors: [{ name: "Shakeel Rifath" }],
   openGraph: {

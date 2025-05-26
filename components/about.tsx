@@ -61,7 +61,7 @@ const About = () => {
                 <Card className="w-64 h-64 rounded-full overflow-hidden border-4 border-primary/20 p-1 hover:border-primary/40 transition-colors duration-300">
                   <div className="w-full h-full rounded-full overflow-hidden">
                     <Image
-                      src="/Shakeel.jpeg"
+                      src="/shakeel_profile.jpg"
                       alt="T Shakeel Rifath"
                       width={250}
                       height={250}

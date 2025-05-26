@@ -83,7 +83,7 @@ const Hero = () => {
 						.
 					</motion.h1>
 
-					{/* <motion.p
+					<motion.p
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.6, duration: 0.8 }}
@@ -99,14 +99,14 @@ const Hero = () => {
 							From patient care to public safety, I turn insights into business
 							impact.
 						</span>
-					</motion.p> */}
+					</motion.p>
 
 					{/* Stats Section */}
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.8, duration: 0.8 }}
-						className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
+						className="mt-20 grid grid-cols-1 lg:grid-cols-4 gap-4 max-w-6xl mx-auto"
 					>
 						{stats.map((stat, index) => (
 							<motion.div
@@ -125,7 +125,7 @@ const Hero = () => {
 							</motion.div>
 						))}
 					</motion.div>
-          <motion.p
+                {/* <motion.p
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.6, duration: 0.8 }}
@@ -141,7 +141,7 @@ const Hero = () => {
 							From patient care to public safety, I turn insights into business
 							impact.
 						</span>
-					</motion.p>
+					</motion.p> */}
 				</motion.div>
        
 			</div>
