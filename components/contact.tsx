@@ -31,7 +31,9 @@ const Contact = () => {
 
           <Card className="bg-gray-900/50 border-gray-800 mb-10 hover:border-primary/50 transition-all duration-300">
             <CardContent className="p-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Increased gap and adjusted responsive layout */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 lg:gap-8">
+                {/* Email Section */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={
@@ -40,20 +42,23 @@ const Contact = () => {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="flex items-center justify-center md:justify-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <div className="w-12 h-12 shrink-0 rounded-full bg-primary/10 flex items-center justify-center">
                     <Mail size={20} className="text-primary" />
                   </div>
                   <div className="text-left">
-                    <h3 className="text-sm font-medium text-gray-400">Email</h3>
+                    <h3 className="text-sm font-medium text-gray-400 mb-1">
+                      Email
+                    </h3>
                     <Link
                       href="mailto:shakeelrifathcse@gmail.com"
-                      className="text-white hover:text-primary transition-colors"
+                      className="text-white hover:text-primary transition-colors text-sm break-all"
                     >
                       shakeelrifathcse@gmail.com
                     </Link>
                   </div>
                 </motion.div>
 
+                {/* Phone Section - Apply same changes to other sections */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={
@@ -62,20 +67,23 @@ const Contact = () => {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   className="flex items-center justify-center md:justify-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <div className="w-12 h-12 shrink-0 rounded-full bg-primary/10 flex items-center justify-center">
                     <Phone size={20} className="text-primary" />
                   </div>
                   <div className="text-left">
-                    <h3 className="text-sm font-medium text-gray-400">Phone</h3>
+                    <h3 className="text-sm font-medium text-gray-400 mb-1">
+                      Phone
+                    </h3>
                     <Link
-                      href="tel:+918608046140 "
-                      className="text-white hover:text-primary transition-colors"
+                      href="tel:+918608046140"
+                      className="text-white hover:text-primary transition-colors text-sm"
                     >
-                      +91 8608046140 
+                      +91 8608046140
                     </Link>
                   </div>
                 </motion.div>
 
+                {/* WhatsApp Section - Apply same changes */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={
@@ -84,16 +92,18 @@ const Contact = () => {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   className="flex items-center justify-center md:justify-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <div className="w-12 h-12 shrink-0 rounded-full bg-primary/10 flex items-center justify-center">
                     <MessageCircle size={20} className="text-primary" />
                   </div>
                   <div className="text-left">
-                    <h3 className="text-sm font-medium text-gray-400">WhatsApp</h3>
+                    <h3 className="text-sm font-medium text-gray-400 mb-1">
+                      WhatsApp
+                    </h3>
                     <Link
                       href="https://wa.me/918608046140"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white hover:text-primary transition-colors"
+                      className="text-white hover:text-primary transition-colors text-sm"
                     >
                       Chat on WhatsApp
                     </Link>
