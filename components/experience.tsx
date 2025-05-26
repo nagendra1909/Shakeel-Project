@@ -28,34 +28,61 @@ const Experience = () => {
             <CardContent className="p-6">
               <div className="flex items-center mb-4 text-primary">
                 <Briefcase size={28} className="mr-2" />
-                <h3 className="text-xxl font-bold">Responsibilities & Achievements</h3>
+                <h3 className="text-xxl font-bold">Big Data Engineer</h3>
               </div>
 
               <div className="flex items-center mb-6 text-gray-400 text-sm">
                 <CalendarDays size={16} className="mr-2" />
-                <span>IIITDM Kancheepuram |  2022 - Present</span>
+                <span>NexTurn |  2024 - Present</span>
               </div>
 
               <div className="p-6 bg-voilet rounded-lg shadow-md">
   <ul className="list-disc list-inside space-y-4">
     <li>
-      <span className="font-bold">Lead Developer, Placement Cell IIITDM Kancheepuram:<br></br></span> Developed and maintained the placement portal, improving student-employer interaction efficiency and automating key placement processes.
+      <span className="font-bold">Role : </span> Big Data Engineer.
     </li>
     <li>
-      <span className="font-bold">Web Developer, System Coding Club IIITDM Kancheepuram:<br></br></span> Built and maintained the club’s website to support student tech initiatives, integrating interactive features and optimized UI design.
+      <span className="font-bold">Tech : </span> HiveQL, Spark, HDFS, Databricks.
     </li>
     <li>
-      <span className="font-bold">Placement Cell Coordinator, IIITDM Kancheepuram:<br></br></span> Coordinated campus recruitment, liaised with companies, and organized skill development workshops to enhance student placement opportunities.
+      <span className="font-bold">Work : </span> Built scalable pipelines to ingest, process & query enterprise datasets.
     </li>
     <li>
-      <span className="font-bold">BITS Hyderabad Full-Stack Hackathon:<br></br></span> Ranked in the Top 10 position out of 700 teams in a 20-hour competition, showcasing full-stack development (React.js, Node.js), problem-solving, and teamwork.
+      <span className="font-bold">Tech :</span> Python, Web Scraping, ML (planned).
     </li>
     <li>
-      <span className="font-bold">Startup Culture Intern, Made-IT Innovation Foundation:<br></br></span> Successfully completed an immersive program on startup culture, gaining practical skills in entrepreneurship, business development, and innovation.
+      <span className="font-bold">Goal :</span> Predict and alert high-risk zones in real-time.
+    </li>
+    
+  </ul>
+              </div>
+
+            </CardContent>
+          </Card>
+          <Card className="bg-gray-900/50 border-gray-800 overflow-hidden hover:border-primary/50 transition-all duration-300 project-card">
+            <CardContent className="p-6">
+              <div className="flex items-center mb-4 text-primary">
+                <Briefcase size={28} className="mr-2" />
+                <h3 className="text-xxl font-bold">Data Analyst Intern</h3>
+              </div>
+
+              <div className="flex items-center mb-6 text-gray-400 text-sm">
+                <CalendarDays size={16} className="mr-2" />
+                <span>FMCG Sales Dashboard for Retail Chain  |  2023</span>
+              </div>
+
+              <div className="p-6 bg-voilet rounded-lg shadow-md">
+  <ul className="list-disc list-inside space-y-4">
+    <li>
+      <span className="font-bold">Role : </span> Data Analyst Intern
     </li>
     <li>
-      <span className="font-bold">Senior Cadet, National Cadet Corps (NCC):<br></br></span> Earned NCC ‘B’ and ‘C’ certifications with distinction, showcasing leadership, discipline, teamwork, and resilience through training programs and camps.
+      <span className="font-bold">Tools :</span> Power BI, Python, Excel.
     </li>
+    <li>
+      <span className="font-bold">Impact : </span>  Helped retail chain double its sales by uncovering product-level insights.
+    </li>
+    
   </ul>
               </div>
 
@@ -71,18 +98,18 @@ const Experience = () => {
 
               <div className="flex items-center mb-6 text-gray-400 text-sm">
                 <CalendarDays size={16} className="mr-2" />
-                <span>IIITDM Kancheepuram, Chennai, Tamil Nadu | Nov 2022 – June 2026</span>
+                <span>Hindustan Institute of Technology and Science Tamil Nadu | Nov 2020 - 2024</span>
               </div>
 
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>B.Tech in Computer Science and Manufacturing</span>
+                  <span>B.Tech in Computer Science & Engineering</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
                   <span>
-                    Relevant Coursework: Data Structures, Algorithms, Database Management, Web Development, Introduction to DataScience
+                    Relevant Coursework: Programming ,Data Structures, Algorithms, Database Management, Machine Learning, DataScience .
                   </span>
                 </li>
               </ul>

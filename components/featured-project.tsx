@@ -35,8 +35,8 @@ const FeaturedProject = () => {
                 className="relative aspect-video overflow-hidden rounded-lg group"
               >
                 <Image
-                  src="/wire.png"
-                  alt="Frame-Forge Result Page"
+                  src="/ml.jpg"
+                  alt="Project Result Page"
                   width={600}
                   height={400}
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -53,23 +53,25 @@ const FeaturedProject = () => {
                 className="flex flex-col justify-center"
                 ref={ref}
               >
-                <h3 className="text-2xl font-bold mb-4 text-primary font-mono">Frame - Forge</h3>
+                <h3 className="text-2xl font-bold mb-4 text-primary font-mono">An Integrated Development Of IoT Based Machine Learning For Data-Driven Travel Recommendations</h3>
                 <p className="text-gray-300 mb-6">
-                A full-stack Next.js web application that transforms wireframes into fully functional React components using AI-powered automation. The app streamlines UI development by interpreting design wireframes and converting them into clean, reusable code.
+                It is a predictive modelling and recommendation system that continuously monitors environmental conditions, including air quality, noise pollution, and indoor pollutants. It uses real-time data from a network of sensors and integrates this with patient health records to provide personalized alerts and recommendations. These alerts help patients avoid potential health risks by making informed choices about their travel plans and daily activities.
 
 
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">React.Js</span>
-                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Next.js</span>
-                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">TypeScript</span>
-                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
-                    PostgreSQL
-                  </span>
-                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Tailwind CSS</span>
-                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Firebase</span>
-                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">OpenRouter AI</span>
+                <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Python</span>
+                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Data Wrangling
+                  EDA</span>
+                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">EDA</span>
+                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Data Visualization</span>
+                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Matplotlib</span>
+                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Pandas</span>
+                  
+                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Numpy</span>
+                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Logistic Regression</span>
+                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Decision Tree</span>
                 </div>
 
                 <div className="flex flex-wrap gap-4">

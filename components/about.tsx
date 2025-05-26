@@ -128,13 +128,13 @@ research focused on enabling data-driven decisions for asthma and heart patients
               >
                 <div className="flex flex-wrap gap-3">
                   <div className="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">
-                    <span className="font-mono">B.Tech CS </span>
+                    <span className="font-mono">B.Tech CSE </span>
                   </div>
                   <div className="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">
-                    <span className="font-mono">IIITDM Kancheepuram</span>
+                    <span className="font-mono">Hindustan Institute</span>
                   </div>
                   <div className="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">
-                    <span className="font-mono">2022 - 2026</span>
+                    <span className="font-mono">2020 - 2024</span>
                   </div>
                 </div>
               </motion.div>

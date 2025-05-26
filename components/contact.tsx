@@ -24,7 +24,7 @@ const Contact = () => {
         >
           <h2 className="section-title gradient-text">Get In Touch</h2>
           <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
-            I'm currently looking for Intern opportunities. If you have a
+            I'm currently looking for Full-Time opportunities. If you have a
             position that matches my skills, or if you just want to say hi, feel
             free to reach out!
           </p>
