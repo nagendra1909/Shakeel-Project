@@ -19,15 +19,18 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Shakeel Rifath | Full Stack Developer",
   description:
-    "Portfolio of Shakeel Rifath, a full stack developer specializing in AI-driven and automation-first applications.",
-  keywords: ["developer", "full stack", "react", "next.js", "AI", "portfolio", "Shakeel Rifath"],
+    "Portfolio of Shakeel Rifath",
+  keywords: ["Shakeel Rifath"],
+  icons: {
+    icon: "/image.png",
+  },
   authors: [{ name: "Shakeel Rifath" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://Nagendrakumar.vercel.app",
-    title: "Shakeel Rifath | Full Stack Developer",
-    description: "Full Stack Developer specializing in AI-driven and automation-first applications",
+    url: "https://shakeel-project.vercel.app/",
+    title: "Shakeel Rifath | Big Data Engineer",
+    description: "Big Data Engineer with expertise in building scalable data pipelines and analytics solutions.",
     siteName: "Shakeel Rifath Portfolio",
   },
 }
