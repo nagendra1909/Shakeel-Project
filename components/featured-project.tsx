@@ -78,14 +78,15 @@ const FeaturedProject = () => {
                   <Button variant="outline" size="sm" className="rounded-full group" asChild>
                     <Link href="https://github.com/shakeelrifathcse/FrameForge---Code" target="_blank" rel="noopener noreferrer">
                       <Github size={16} className="mr-2 group-hover:text-primary transition-colors" />
-                      <span className="group-hover:text-primary transition-colors">GitHub</span>
+                      <span className="group-hover:text-primary transition-colors">View as Stakeholder</span>
                     </Link>
                   </Button>
                   <Button size="sm" className="rounded-full bg-primary hover:bg-primary/90" asChild>
-                    <Link href="https://make-ui.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    {/* <Link href="https://make-ui.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <ExternalLink size={16} className="mr-2" />
-                      Live Demo
-                    </Link>
+                      View as Technical Reviewer
+                    </Link> */}
+                    <p>View as Technical Reviewer</p>
                   </Button>
                 </div>
               </motion.div>

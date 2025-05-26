@@ -38,7 +38,7 @@ const Hero = () => {
 		<section className="relative min-h-screen flex items-center justify-center">
 			<div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 z-0" />
 
-			<div className="container relative z-10 pt-24 md:pt-32">
+			<div className="container relative z-10 pt-22 md:pt-32">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
@@ -83,7 +83,7 @@ const Hero = () => {
 						.
 					</motion.h1>
 
-					<motion.p
+					{/* <motion.p
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.6, duration: 0.8 }}
@@ -99,7 +99,7 @@ const Hero = () => {
 							From patient care to public safety, I turn insights into business
 							impact.
 						</span>
-					</motion.p>
+					</motion.p> */}
 
 					{/* Stats Section */}
 					<motion.div
@@ -125,7 +125,25 @@ const Hero = () => {
 							</motion.div>
 						))}
 					</motion.div>
+          <motion.p
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 0.6, duration: 0.8 }}
+						className="mb-12 text-lg text-gray-400 max-w-2xl mx-auto space-y-6"
+					>
+						<span className="block">
+							Every dataset has a hidden story and I love uncovering it.
+						</span>
+						<span className="block">
+							I don't chase data for money, I do it for meaning.
+						</span>
+						<span className="block">
+							From patient care to public safety, I turn insights into business
+							impact.
+						</span>
+					</motion.p>
 				</motion.div>
+       
 			</div>
 
 			{/* Scroll Button */}

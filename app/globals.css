@@ -75,7 +75,7 @@
 
   /* Adjust section spacing */
   section {
-    scroll-margin-top: 5rem; /* Adds margin for fixed navigation */
+    scroll-margin-top: 3rem; /* Adds margin for fixed navigation */
   }
 }
 
