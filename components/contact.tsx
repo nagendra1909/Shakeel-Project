@@ -210,7 +210,7 @@ const Contact = () => {
           </div>
           <nav>
             <ul className="flex items-center gap-4">
-              <li>
+              {/* <li>
                 <Link
                   href="https://github.com/yourusername"
                   target="_blank"
@@ -229,7 +229,7 @@ const Contact = () => {
                 >
                   <Linkedin className="w-4 h-4" />
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

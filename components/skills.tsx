@@ -27,14 +27,7 @@ const skills1 = [
   { name: "Predictive Modeling", level: 80, icon: Brain },
   { name: "Business Intelligence", level: 90, icon: BarChart3 },
   { name: "Dashboarding (Power BI)", level: 95, icon: PieChart },
-  // { name: "Python", level: 80, icon: Terminal },
-  // { name: "SQL", level: 85, icon: Database },
-  // { name: "Apache Spark", level: 60, icon: Flame },
-  // { name: "HiveQL", level: 80, icon: Container },
-  // { name: "Sqoop", level: 55, icon: Server },
-  // { name: "Hive", level: 60, icon: Container },
-  // { name: "Kafka", level: 70, icon: Factory },
-  // { name: "Airflow", level: 30, icon: Wind },
+
 ]
 const skills2 = [
   // { name: "Exploratory Data Analysis", level: 95, icon: LineChart },
@@ -63,6 +56,7 @@ const skills3 = [
   // { name: "Hive", level: 60, icon: Container },
   { name: "Kafka", level: 70, icon: Factory },
   { name: "Airflow", level: 30, icon: Wind },
+  
 ]
 
 

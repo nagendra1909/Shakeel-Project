@@ -42,7 +42,7 @@ const FeaturedProject = () => {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
-                  <p className="text-white text-sm font-medium">Frame-Forge Result Page</p>
+                  {/* <p className="text-white text-sm font-medium">name here</p> */}
                 </div>
               </motion.div>
 
@@ -78,15 +78,16 @@ const FeaturedProject = () => {
                   <Button variant="outline" size="sm" className="rounded-full group" asChild>
                     <Link href="https://github.com/shakeelrifathcse/FrameForge---Code" target="_blank" rel="noopener noreferrer">
                       {/* <Github size={16} className="mr-2 group-hover:text-primary transition-colors" /> */}
-                      <span className="group-hover:text-primary transition-colors">View as Stakeholder (High Level)</span>
+                      <ExternalLink size={16} className="mr-2" />
+                      <span className="group-hover:text-primary transition-colors">View as Stakeholder </span>
                     </Link>
                   </Button>
                   <Button size="sm" className="rounded-full bg-primary hover:bg-primary/90" asChild>
-                    {/* <Link href="https://make-ui.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://make-ui.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <ExternalLink size={16} className="mr-2" />
                       View as Technical Reviewer
-                    </Link> */}
-                    <p>View as Technical Reviewer</p>
+                    </Link>
+                    {/* <p>View as Technical Reviewer</p> */}
                   </Button>
                 </div>
               </motion.div>

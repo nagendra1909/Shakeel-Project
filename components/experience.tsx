@@ -58,7 +58,9 @@ const Experience = () => {
               </div>
 
             </CardContent>
+            
           </Card>
+          
           <Card className="bg-gray-900/50 border-gray-800 overflow-hidden hover:border-primary/50 transition-all duration-300 project-card">
             <CardContent className="p-6">
               <div className="flex items-center mb-4 text-primary">

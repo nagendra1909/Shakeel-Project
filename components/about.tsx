@@ -27,7 +27,7 @@ const flutterAnimation = {
 }
 
 const roles = [
-  'Big Data Engineer',
+  '# -  Big Data Engineer',
   500, // Delay in ms
   'Freelance Data Scientist',
   500,
