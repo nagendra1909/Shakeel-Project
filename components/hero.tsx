@@ -91,13 +91,15 @@ const Hero = () => {
 					>
 						<span className="block">
 							Every dataset has a hidden story and I love uncovering it.
+							<br></br>I don't chase data for money, I do it for meaning.
+							{/* From patient care to public safety, I turn insights into business
+							impact. */}
 						</span>
 						<span className="block">
-							I don't chase data for money, I do it for meaning.
+							
 						</span>
 						<span className="block">
-							From patient care to public safety, I turn insights into business
-							impact.
+							
 						</span>
 					</motion.p>
 

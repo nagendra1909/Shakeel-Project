@@ -77,8 +77,8 @@ const FeaturedProject = () => {
                 <div className="flex flex-wrap gap-4">
                   <Button variant="outline" size="sm" className="rounded-full group" asChild>
                     <Link href="https://github.com/shakeelrifathcse/FrameForge---Code" target="_blank" rel="noopener noreferrer">
-                      <Github size={16} className="mr-2 group-hover:text-primary transition-colors" />
-                      <span className="group-hover:text-primary transition-colors">View as Stakeholder</span>
+                      {/* <Github size={16} className="mr-2 group-hover:text-primary transition-colors" /> */}
+                      <span className="group-hover:text-primary transition-colors">View as Stakeholder (High Level)</span>
                     </Link>
                   </Button>
                   <Button size="sm" className="rounded-full bg-primary hover:bg-primary/90" asChild>

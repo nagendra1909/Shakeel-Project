@@ -179,9 +179,9 @@ const Projects = () => {
 	return (
 		<section className="section bg-gray-900/30 relative">
 			<div className="container">
-				<div className="text-center mb-16">
+				{/* <div className="text-center mb-16">
 					<h2 className="section-title gradient-text">OTHER - PROJECTS</h2>
-				</div>
+				</div> */}
 
 				{/* <motion.div
 					ref={ref}
@@ -227,7 +227,7 @@ const Projects = () => {
 						</motion.div>
 					))}
 				</motion.div> */}
-
+{/* 
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -245,7 +245,7 @@ const Projects = () => {
 							GitHub
 						</Link>
 					</p>
-				</motion.div>
+				</motion.div> */}
 
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
@@ -326,11 +326,11 @@ const Projects = () => {
 												<div className="flex flex-wrap gap-4">
 													<Button variant="outline" size="sm" className="rounded-full group" asChild>
 														<Link href={project.github} target="_blank" rel="noopener noreferrer">
-															<Github size={16} className="mr-2 group-hover:text-primary transition-colors" />
-															<span className="group-hover:text-primary transition-colors">View as Stakeholder</span>
+															{/* <Github size={16} className="mr-2 group-hover:text-primary transition-colors" /> */}
+															<span className="group-hover:text-primary transition-colors">View as Stakeholder (High Level)</span>
 														</Link>
 													</Button>
-													<Button size="sm" className="rounded-full bg-primary hover:bg-primary/90" asChild>
+													<Button variant="outline" size="sm" className="rounded-full bg-primary hover:bg-primary/90" asChild>
 														{/* <Link href={project.demo} target="_blank" rel="noopener noreferrer">
 															<ExternalLink size={16} className="mr-2" />
 															Live Demo

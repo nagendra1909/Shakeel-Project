@@ -17,12 +17,12 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Shakeel Rifath | Full Stack Developer",
+  title: "Shakeel Rifath | Data Professional",
   description:
     "Portfolio of Shakeel Rifath",
   keywords: ["Shakeel Rifath"],
   icons: {
-    icon: "/shakeel_fevicon.png",
+    icon: "/shakeel_logo.jpg",
   },
   authors: [{ name: "Shakeel Rifath" }],
   openGraph: {
