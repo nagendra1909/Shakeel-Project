@@ -52,7 +52,7 @@ const Hero = () => {
 						className="mb-3 md:mb-6 inline-block" // Reduced margin on mobile
 					>
 						<span className="px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
-							Big Data Engineer
+							Data Professional
 						</span>
 					</motion.div>
 
