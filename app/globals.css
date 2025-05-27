@@ -75,7 +75,10 @@
 
   /* Adjust section spacing */
   section {
-    scroll-margin-top: 3rem; /* Adds margin for fixed navigation */
+    scroll-margin-top: 5rem; /* Increased for mobile */
+    @media (min-width: 768px) {
+      scroll-margin-top: 3rem; /* Keep existing desktop spacing */
+    }
   }
 }
 

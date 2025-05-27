@@ -38,29 +38,29 @@ const Hero = () => {
 		<section className="relative min-h-screen flex items-center justify-center">
 			<div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 z-0" />
 
-			<div className="container relative z-10 pt-22 md:pt-32">
+			<div className="container relative z-10 pt-20 md:pt-22"> {/* Reduced from pt-32 to pt-20 */}
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8 }}
-					className="max-w-3xl mx-auto text-center space-y-8"
+					className="max-w-3xl mx-auto text-center space-y-4 md:space-y-8" // Reduced space between elements on mobile
 				>
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.2, duration: 0.8 }}
-						className="mb-6 inline-block"
+						className="mb-3 md:mb-6 inline-block" // Reduced margin on mobile
 					>
-						{/* <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
+						<span className="px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
 							Big Data Engineer
-						</span> */}
+						</span>
 					</motion.div>
 
 					<motion.h1
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.4, duration: 0.8 }}
-						className="mb-8 leading-tight"
+						className="mb-4 md:mb-8 leading-tight" // Reduced margin on mobile
 					>
 						Hi, I&apos;m Shakeel Rifath  -  I am{" "}
 						<span className="gradient-text">
