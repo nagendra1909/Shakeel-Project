@@ -8,7 +8,7 @@ import { Github, Linkedin, Download, ArrowDown } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
 const stats = [
-	{ value: "7+", label: "Self-Made Data Projects" },
+	{ value: "8+", label: "Self-Made Data Projects" },
 	{
 		value: "20+",
 		label: "International Presentations and Conferences Delivered",
