@@ -20,13 +20,17 @@ import {
   Github,
   Cloud
 } from "lucide-react"
+import { FaPython } from "react-icons/fa";
+import { RxDashboard } from "react-icons/rx";
+import { SiApacheairflow } from "react-icons/si";
+import { SiApachekafka } from "react-icons/si";
 
 // Modify skills array to include icon component
 const skills1 = [
-  { name: "Exploratory Data Analysis", level: 95, icon: LineChart },
-  { name: "Predictive Modeling", level: 80, icon: Brain },
-  { name: "Business Intelligence", level: 90, icon: BarChart3 },
-  { name: "Dashboarding (Power BI)", level: 95, icon: PieChart },
+  { name: "Exploratory Data Analysis", level: 100, icon: LineChart },
+  { name: "Predictive Modeling", level: 100, icon: Brain },
+  { name: "Business Intelligence", level: 100, icon: BarChart3 },
+  { name: "Dashboarding (Power BI)", level: 100, icon: RxDashboard },
 
 ]
 const skills2 = [
@@ -34,12 +38,12 @@ const skills2 = [
   // { name: "Predictive Modeling", level: 80, icon: Brain },
   // { name: "Business Intelligence", level: 90, icon: BarChart3 },
   // { name: "Dashboarding (Power BI)", level: 95, icon: PieChart },
-  { name: "Python", level: 80, icon: Terminal },
-  { name: "SQL", level: 85, icon: Database },
+  { name: "Python", level: 100, icon: FaPython },
+  { name: "SQL", level: 100, icon: Database },
   // { name: "Apache Spark", level: 60, icon: Flame },
   // { name: "HiveQL", level: 80, icon: Container },
   // { name: "Sqoop", level: 55, icon: Server },
-  { name: "Hive", level: 60, icon: Container },
+  { name: "Hive", level: 100, icon: Container },
   // { name: "Kafka", level: 70, icon: Factory },
   // { name: "Airflow", level: 30, icon: Wind },
 ]
@@ -50,12 +54,12 @@ const skills3 = [
   // { name: "Dashboarding (Power BI)", level: 95, icon: PieChart },
   // { name: "Python", level: 80, icon: Terminal },
   // { name: "SQL", level: 85, icon: Database },
-  { name: "Apache Spark", level: 60, icon: Flame },
-  { name: "HiveQL", level: 80, icon: Container },
-  { name: "Sqoop", level: 55, icon: Server },
+  { name: "Apache Spark", level: 100, icon: Flame },
+  { name: "HiveQL", level: 100, icon: Container },
+  { name: "Sqoop", level: 100, icon: Server },
   // { name: "Hive", level: 60, icon: Container },
-  { name: "Kafka", level: 70, icon: Factory },
-  { name: "Airflow", level: 30, icon: Wind },
+  { name: "Kafka", level: 100, icon: SiApachekafka },
+  { name: "Airflow", level: 100, icon: SiApacheairflow },
   
 ]
 
@@ -111,10 +115,10 @@ const Skills = () => {
               <motion.div key={index} variants={itemVariants}>
                 <div className="mb-2 flex justify-between items-center">
                   <div className="flex items-center gap-2">
-                    <skill.icon className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium font-mono">{skill.name}</span>
+                    <skill.icon className="w-12 h-12 text-primary" />
+                    <span className="text-lg font-mono">{skill.name}</span>
                   </div>
-                  <span className="text-xs text-gray-400">{skill.level}%</span>
+                  {/* <span className="text-xs text-gray-400">{skill.level}%</span> */}
                 </div>
                 <div className="h-2 bg-gray-800 rounded-full overflow-hidden skill-bar">
                   <motion.div
@@ -139,10 +143,10 @@ const Skills = () => {
               <motion.div key={index} variants={itemVariants}>
                 <div className="mb-2 flex justify-between items-center">
                   <div className="flex items-center gap-2">
-                    <skill.icon className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium font-mono">{skill.name}</span>
+                    <skill.icon className="w-12 h-12 text-primary" />
+                    <span className="text-lg font-medium font-mono">{skill.name}</span>
                   </div>
-                  <span className="text-xs text-gray-400">{skill.level}%</span>
+                  {/* <span className="text-xs text-gray-400">{skill.level}%</span> */}
                 </div>
                 <div className="h-2 bg-gray-800 rounded-full overflow-hidden skill-bar">
                   <motion.div
@@ -167,10 +171,10 @@ const Skills = () => {
               <motion.div key={index} variants={itemVariants}>
                 <div className="mb-2 flex justify-between items-center">
                   <div className="flex items-center gap-2">
-                    <skill.icon className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium font-mono">{skill.name}</span>
+                    <skill.icon className="w-12 h-12 text-primary" />
+                    <span className="text-lg font-medium font-mono">{skill.name}</span>
                   </div>
-                  <span className="text-xs text-gray-400">{skill.level}%</span>
+                  {/* <span className="text-xs text-gray-400">{skill.level}%</span> */}
                 </div>
                 <div className="h-2 bg-gray-800 rounded-full overflow-hidden skill-bar">
                   <motion.div
