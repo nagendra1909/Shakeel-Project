@@ -204,9 +204,9 @@ const Contact = () => {
       <div className="mt-16 pt-8 border-t border-border/50">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-            <span>© {new Date().getFullYear()} Shakeel Rifath</span>
-            <span className="hidden sm:inline">•</span>
-            <span>Built with Next.js</span>
+            <span> Copyright © {new Date().getFullYear()} Shakeel Rifath - All Rights Reserved.</span>
+            <span className="hidden sm:inline">       </span>
+            <span>❤️Built with passion, powered by data </span>
           </div>
           <nav>
             <ul className="flex items-center gap-4">
