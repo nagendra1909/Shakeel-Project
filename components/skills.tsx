@@ -20,13 +20,17 @@ import {
   Github,
   Cloud
 } from "lucide-react"
+import { FaPython } from "react-icons/fa";
+import { RxDashboard } from "react-icons/rx";
+import { SiApacheairflow } from "react-icons/si";
+import { SiApachekafka } from "react-icons/si";
 
 // Modify skills array to include icon component
 const skills1 = [
-  { name: "Exploratory Data Analysis", level: 95, icon: LineChart },
-  { name: "Predictive Modeling", level: 80, icon: Brain },
-  { name: "Business Intelligence", level: 90, icon: BarChart3 },
-  { name: "Dashboarding (Power BI)", level: 95, icon: PieChart },
+  { name: "Exploratory Data Analysis", level: 100, icon: LineChart },
+  { name: "Predictive Modeling", level: 100, icon: Brain },
+  { name: "Business Intelligence", level: 100, icon: BarChart3 },
+  { name: "Dashboarding (Power BI)", level: 100, icon: RxDashboard },
 
 ]
 const skills2 = [
@@ -34,12 +38,12 @@ const skills2 = [
   // { name: "Predictive Modeling", level: 80, icon: Brain },
   // { name: "Business Intelligence", level: 90, icon: BarChart3 },
   // { name: "Dashboarding (Power BI)", level: 95, icon: PieChart },
-  { name: "Python", level: 80, icon: Terminal },
-  { name: "SQL", level: 85, icon: Database },
+  { name: "Python", level: 100, icon: FaPython },
+  { name: "SQL", level: 100, icon: Database },
   // { name: "Apache Spark", level: 60, icon: Flame },
   // { name: "HiveQL", level: 80, icon: Container },
   // { name: "Sqoop", level: 55, icon: Server },
-  { name: "Hive", level: 60, icon: Container },
+  { name: "Hive", level: 100, icon: Container },
   // { name: "Kafka", level: 70, icon: Factory },
   // { name: "Airflow", level: 30, icon: Wind },
 ]
@@ -50,12 +54,12 @@ const skills3 = [
   // { name: "Dashboarding (Power BI)", level: 95, icon: PieChart },
   // { name: "Python", level: 80, icon: Terminal },
   // { name: "SQL", level: 85, icon: Database },
-  { name: "Apache Spark", level: 60, icon: Flame },
-  { name: "HiveQL", level: 80, icon: Container },
-  { name: "Sqoop", level: 55, icon: Server },
+  { name: "Apache Spark", level: 100, icon: Flame },
+  { name: "HiveQL", level: 100, icon: Container },
+  { name: "Sqoop", level: 100, icon: Server },
   // { name: "Hive", level: 60, icon: Container },
-  { name: "Kafka", level: 70, icon: Factory },
-  { name: "Airflow", level: 30, icon: Wind },
+  { name: "Kafka", level: 100, icon: SiApachekafka },
+  { name: "Airflow", level: 100, icon: SiApacheairflow },
   
 ]
 
@@ -90,127 +94,95 @@ const Skills = () => {
   return (
     <section id="skills" className="section relative">
       <div className="container">
-        <div className="text-center mb-16">
-          <h2 className="section-title gradient-text">Skills</h2>
-        </div>
+        <motion.div className="text-center mb-16">
+          <h2 className="section-title gradient-text text-5xl mb-6">Skills</h2>
+          <p className="text-gray-400 text-xl">
+            Here are some of the technologies I work with:
+          </p>
+        </motion.div>
 
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="max-w-4xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
-          <br></br>
-          <h4 className="text-center text-3xl font-bold">Data & ML</h4>
-          <br></br>
-          <br></br>
-          <br></br>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Data & ML Section */}
+          <h3 className="text-2xl font-bold mb-8 text-center">Data & ML</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-16">
             {skills1.map((skill, index) => (
-              <motion.div key={index} variants={itemVariants}>
-                <div className="mb-2 flex justify-between items-center">
-                  <div className="flex items-center gap-2">
-                    <skill.icon className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium font-mono">{skill.name}</span>
-                  </div>
-                  <span className="text-xs text-gray-400">{skill.level}%</span>
-                </div>
-                <div className="h-2 bg-gray-800 rounded-full overflow-hidden skill-bar">
-                  <motion.div
-                    className="h-full bg-gradient-to-r from-purple-600 to-blue-500"
-                    initial={{ width: 0 }}
-                    animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
-                    transition={{ duration: 1, delay: index * 0.1 }}
-                  />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-          <br></br>
-          <br></br>
-          <br></br>
-          <h4 className="text-center text-3xl font-bold">Programming and Querying</h4>
-          <br></br>
-          <br></br>
-       
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {skills2.map((skill, index) => (
-              <motion.div key={index} variants={itemVariants}>
-                <div className="mb-2 flex justify-between items-center">
-                  <div className="flex items-center gap-2">
-                    <skill.icon className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium font-mono">{skill.name}</span>
-                  </div>
-                  <span className="text-xs text-gray-400">{skill.level}%</span>
-                </div>
-                <div className="h-2 bg-gray-800 rounded-full overflow-hidden skill-bar">
-                  <motion.div
-                    className="h-full bg-gradient-to-r from-purple-600 to-blue-500"
-                    initial={{ width: 0 }}
-                    animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
-                    transition={{ duration: 1, delay: index * 0.1 }}
-                  />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-          <br></br>
-          <br></br>
-          <br></br>
-          <h4 className="text-center text-3xl font-bold">Big Data Technologies</h4>
-          <br></br>
-          <br></br>
-          <br></br>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {skills3.map((skill, index) => (
-              <motion.div key={index} variants={itemVariants}>
-                <div className="mb-2 flex justify-between items-center">
-                  <div className="flex items-center gap-2">
-                    <skill.icon className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium font-mono">{skill.name}</span>
-                  </div>
-                  <span className="text-xs text-gray-400">{skill.level}%</span>
-                </div>
-                <div className="h-2 bg-gray-800 rounded-full overflow-hidden skill-bar">
-                  <motion.div
-                    className="h-full bg-gradient-to-r from-purple-600 to-blue-500"
-                    initial={{ width: 0 }}
-                    animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
-                    transition={{ duration: 1, delay: index * 0.1 }}
-                  />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-         
-
-          <br></br>
-          <br></br>
-          <div className="text-center mb-16">
-            <h2 className="section-title gradient-text">Other Tools</h2>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
-          >
-            {tools.map((tool, index) => (
-              <div 
+              <motion.div
                 key={index}
-                className="px-4 py-3 bg-gray-900/70 rounded-lg text-center hover:bg-gray-800/70 transition-colors group"
+                variants={itemVariants}
+                className="p-6 bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-800/50 hover:border-primary/20 transition-all duration-300"
               >
-                <div className="flex items-center justify-center gap-2">
-                  <tool.icon className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                  <span className="text-sm font-mono text-gray-300">
-                    {tool.name}
-                  </span>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 flex items-center justify-center text-primary">
+                    <skill.icon size={32} />
+                  </div>
+                  <span className="text-lg text-gray-200">{skill.name}</span>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </motion.div>
+          </div>
+
+          {/* Programming and Querying Section */}
+          <h3 className="text-2xl font-bold mb-8 text-center">Programming and Querying</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-16">
+            {skills2.map((skill, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="p-6 bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-800/50 hover:border-primary/20 transition-all duration-300"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 flex items-center justify-center text-primary">
+                    <skill.icon size={32} />
+                  </div>
+                  <span className="text-lg text-gray-200">{skill.name}</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Big Data Technologies Section */}
+          <h3 className="text-2xl font-bold mb-8 text-center">Big Data Technologies</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-16">
+            {skills3.map((skill, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="p-6 bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-800/50 hover:border-primary/20 transition-all duration-300"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 flex items-center justify-center text-primary">
+                    <skill.icon size={32} />
+                  </div>
+                  <span className="text-lg text-gray-200">{skill.name}</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Other Tools Section */}
+          <h3 className="text-2xl font-bold mb-8 text-center">Other Tools</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            {tools.map((tool, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="p-6 bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-800/50 hover:border-primary/20 transition-all duration-300"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 flex items-center justify-center text-primary">
+                    <tool.icon size={32} />
+                  </div>
+                  <span className="text-lg text-gray-200">{tool.name}</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
